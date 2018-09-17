@@ -48,18 +48,35 @@ body, html {
 .menu a{
     text-decoration: none;
     padding: 16px;
-    color: white;
-    
-    
+    color: white; 
 }
 .menu a.offer-btn{
     border: 2px solid red;
     background-color: red;
     padding: 5px 16px;
 }
-
 .mobile{
     font-size: 35px;
+}
+.mobile-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4CAF50;
+    width: 100%;
+    overflow: hidden;
+}
+.mobile-menu .btn{
+    display: none;
+    background-color: white;
+    color:green;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+}
+.mobile-menu .btn:hover{
+    background-color: green;
+    color:white;
 }
 .motto{
     display: flex;
