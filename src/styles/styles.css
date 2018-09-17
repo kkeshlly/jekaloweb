@@ -1,0 +1,148 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: "Gotham Rounded Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("../assets/jekalo-bg-home.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    padding: 32px 16px 32px ;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.topnav{
+    display: flex;
+
+}
+.logo{
+    width: 50%;
+    height: auto;
+}
+.img-size{
+    max-width: 250;
+    min-width: 100px;
+    width: calc(100%/1.5);
+    height: auto;
+}
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.menu a{
+    text-decoration: none;
+    padding: 16px;
+    color: white;
+    
+    
+}
+.menu a.offer-btn{
+    border: 2px solid red;
+    background-color: red;
+    padding: 5px 16px;
+}
+
+.mobile{
+    font-size: 35px;
+}
+.motto{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 50px 0;
+    font-size: large;
+    color: white;
+}
+.motto div h1{
+    font-size: 50px;
+    padding: 0 0 20px 0;
+}
+.motto div p{
+    font-size:25px;
+}
+
+.find-ride{
+    display: flex;
+    justify-content: center;
+}
+.input-txt{
+    
+}
+input[type=text], input[type=password] {
+    
+    padding: 12px 20px;
+    margin: 2px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 1px 0;
+    border: none;
+    cursor: pointer;
+}
+
+/* Add a hover effect for buttons */
+.btn:hover {
+    opacity: 0.8;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .king {background: red;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .king {background: green;}
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 801px) {
+    .king {background: blue;}
+    .mobile-icon{
+        display: none;
+    }
+} 
+@media only screen and (max-width: 801px) {
+    .king {background: blue;}
+    input[type=text]{
+        width: 100%;
+    }
+    .menu-list{
+        display: none;
+    }
+    
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .king {background: orange;}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .king {background: pink;}
+}
