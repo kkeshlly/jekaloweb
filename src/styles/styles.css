@@ -142,10 +142,73 @@ input[type=text], input[type=password] {
 .btn:hover {
     opacity: 0.8;
 }
+.jeka{
+    background-color:white;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pay card{
+    padding: 32px 16px 32px;
+    max-width: 900px;
+    margin: 0 auto;
+    height: auto;
+}
+.both{
+    display: flex;
+}
+.let{
+    display: flex;
+    justify-content: flex-start;
+}
+.pay h4{
+    padding: 0px;
+    margin: 25px;
+    font-size: 35px; 
+    font-family: 'Times New Roman', Times, serif;
+}
+.pay h2{
+    padding-left: 20px;
+    margin: 2px;
+    font-size: 35px;
+    color: green;
+}
+.pay p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: black;
+    padding-left: 25px;
+    padding-top: 10px; 
+}
+.pay strong{
+    color: green;
+}
+.card img{
+    width: 500px;
+    height: 250px;
+    padding: 10px;
+}
+.adap{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+.adap h5{
+    padding: 15px;
+}
+
+
+
+
+
 
 /* Here comes the media quaries */
-@media (max-width: 900px) {
-  
+@media (max-width: 320px) {
+    .both{
+        width: 100%;
+    }
+   
 }
 
 @media (min-width:480px) {
@@ -178,9 +241,7 @@ input[type=text], input[type=password] {
         font-size: 10px;
     }
 }
-@media (max-width: 570px) {
-    
-}
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 608px) {
