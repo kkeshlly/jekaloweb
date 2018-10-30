@@ -1,20 +1,23 @@
 body, html {
     height: 100%;
+    width: 100%;
+    padding: 0;
     margin: 0;
     font-family: "Gotham Rounded Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    width: 100%
+   
 }
 
 .bg {
     /* The image used */
     background-image: url("../assets/jekalo-bg-home.jpg");
     height: 100%;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .container{
-    padding: 32px 16px 32px;
+    padding: 32px 16px 32px 0px;
     max-width: 900px;
     margin: 0 auto;
     height: auto;
@@ -28,7 +31,7 @@ body, html {
     height: auto;
 }
 .logo img{
-    max-width: 250;
+    max-width: 200px;
     min-width: 100px;
     width: calc(100%/1.5);
     height: auto;
@@ -90,13 +93,11 @@ body, html {
 .motto div p{
     font-size:20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
 }
 
 .find-ride{
     display:flex;
-    justify-content: center;
-   
+    justify-content: center;  
 }
 input[type=text], input[type=password] {
     width: 100%;
@@ -151,75 +152,144 @@ input[type=text], input[type=password] {
 }
 .pay card{
     padding: 32px 16px 32px;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
     height: auto;
 }
 .both{
     display: flex;
+    flex-wrap: wrap;
+    margin: 0%;
 }
 .let{
     display: flex;
     justify-content: flex-start;
+    width: 50%;
+    padding:0px;
 }
-.pay h4{
+.let h4{
     padding: 0px;
     margin: 25px;
-    font-size: 35px; 
+    font-size: 25px; 
     font-family: 'Times New Roman', Times, serif;
 }
-.pay h2{
+.let h2{
     padding-left: 20px;
     margin: 2px;
-    font-size: 35px;
+    font-size: 20px;
     color: green;
 }
-.pay p {
+.let p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    color: black;
+    color: #7d7b7a;
+    line-height: 20px;
     padding-left: 25px;
     padding-top: 10px; 
 }
-.pay strong{
+.let strong{
     color: green;
 }
 .card img{
-    width: 500px;
-    height: 250px;
+    width: 300px;
+    height: 200px;
     padding: 10px;
 }
 .adap{
     display: flex;
-    justify-content: flex-end;
-    margin-top: 20px;
+    justify-content: flex-start;
+    width: 50%;
+    padding: 0%;
 }
-.adap h5{
-    padding: 15px;
+.adap h4{
+    padding: 0px;
+    margin: 25px;
+    font-size: 25px; 
+    font-family: 'Times New Roman', Times, serif;
 }
-
+.adap h2{
+    padding-left: 20px;
+    margin: 10px;
+    font-size: 20px;
+    color: green;
+}
+.adap p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #7d7b7a;
+    line-height: 20px;
+    padding-left: 25px;
+    padding-top: 5px; 
+}
 
 
 
 
 
 /* Here comes the media quaries */
-@media (max-width: 320px) {
-    .both{
+@media (max-width: 760px) {
+    .bg{
         width: 100%;
+        height: 100%;
     }
    
 }
-
-@media (min-width:480px) {
-     .motto p{
-         font-size: 20px;
+@media (max-width:350px){
+     .container{
+         width: 100%;
+         height: 100%;
+         margin: 0;
+         padding: 6px;
+     }
+     .logo img{
+        max-width: 250px;
+        min-width: 100px;
+        width: calc(100%/1.5);
+        height: auto;
+    }
+    .how img{
+        max-width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+    .how h3{
+        font-size: 16px;
+    }
+    .let  h4{
+        font-size: 20px;
+    }
+    .let h2{
+        font-size: 16px;
+        margin: 0%;
+    }
+    .let p{
+        font-size: 14px;
+        line-height: 20px;
+        color: #7d7b7a;
+    }
+    .adap h4{
+        font-size: 20px;
+    }
+    .adap h2{
+        font-size: 16px;
+        margin: 0%;
+    }
+    .adap p{
+        font-size: 14px;
+        line-height: 20px;
+        color: #7d7b7a;
+    }
+  
+}
+@media (max-width:480px) {
+     .motto div p{
+         font-size: 16px;
          text-align: center;
          display: flex;
         justify-content: center;
      }
-     .motto h1{
-        font-size: 16px;
+     .motto div h1{
+        font-size: 25px;
         display: flex;
         justify-content: center;
      }
@@ -247,14 +317,38 @@ input[type=text], input[type=password] {
 @media only screen and (min-width: 608px) {
     .king {background: green;}
     .find-ride{
-        padding-left:55px; 
+        padding-left:0px; 
     }
-  
- 
+}
+@media (max-width:798px){
+    .container{
+        padding: 32px 16px 32px 0px;
+        height: auto;
+    }
+    .find-ride .search{
+        display: inline-block;
+        padding-right: 35px;
+        padding-left: 35px; 
+        width: 300px;
+    }
+    .btn{
+        width: 100%;
+    }
+    b {
+        margin-left: 35px;
+    }
+    .motto h1{
+        font-size: 10px;
+    }
+    .how img{
+        max-width: 90%;
+        height: auto;
+        padding: 10px;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 802px) {
     .king {background: blue;}
     .mobile-icon{
         display: none;
@@ -274,8 +368,15 @@ input[type=text], input[type=password] {
     .menu-list{
         display: none;
     }
-    
-   
+   .both{
+       width: 100%; 
+   }
+   .adap{
+       width: 100%;
+   }
+   .let{
+       width: 100%;
+   }
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
