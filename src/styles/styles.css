@@ -1,37 +1,37 @@
 body, html {
     height: 100%;
+    width: 100%;
+    padding: 0;
     margin: 0;
     font-family: "Gotham Rounded Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+   
 }
 
 .bg {
     /* The image used */
     background-image: url("../assets/jekalo-bg-home.jpg");
-
-    /* Full height */
-    height: 100%; 
-
-    /* Center and scale the image nicely */
+    height: 100%;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .container{
-    padding: 32px 16px 32px ;
+    padding: 32px 16px 32px 0px;
     max-width: 900px;
     margin: 0 auto;
+    height: auto;
 }
 
 .topnav{
     display: flex;
-
 }
 .logo{
-    width: 50%;
+   width: 50%;
     height: auto;
 }
-.img-size{
-    max-width: 250;
+.logo img{
+    max-width: 200px;
     min-width: 100px;
     width: calc(100%/1.5);
     height: auto;
@@ -48,82 +48,326 @@ body, html {
 .menu a{
     text-decoration: none;
     padding: 16px;
-    color: white;
-    
-    
+    color: white; 
 }
 .menu a.offer-btn{
     border: 2px solid red;
     background-color: red;
     padding: 5px 16px;
 }
-
 .mobile{
     font-size: 35px;
 }
+.mobile-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4CAF50;
+    width: 100%;
+    overflow: hidden;
+}
+.mobile-menu .btn{
+    display: none;
+    background-color: white;
+    color:green;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+}
+.mobile-menu .btn:hover{
+    background-color: green;
+    color:white;
+}
+.both{
+    display: flex;
+}
 .motto{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    width: 50%;
     text-align: center;
     margin: 50px 0;
     font-size: large;
     color: white;
 }
+.photo{
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+}
+.photo img{
+    width: 550px;
+    height: 500px;
+}
+@media (max-width: 1200px) {
+    .both{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .motto{
+        width: 50%
+    }
+    .photo{
+        display: flex;
+        width: 50%;
+    }
+} 
+@media (max-width: 760px) {
+    .both{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .motto{
+        width: 100%
+    }
+    .photo{
+        display: flex;
+        width: 100%;
+    }
+}
+@media (max-width: 600px){
+    .photo img{
+        width: 500px;
+        height: 500px;
+    }
+}
+@media (max-width:500px){
+    .photo img{
+        width: 300px;
+        height: 300px;
+    }
+}
 .motto div h1{
-    font-size: 50px;
-    padding: 0 0 20px 0;
+    font-size: 40px;
+    padding: 0 0 10px 0;
 }
 .motto div p{
-    font-size:25px;
+    font-size:20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-.find-ride{
-    display: flex;
-    justify-content: center;
-}
-.input-txt{
-    
-}
-input[type=text], input[type=password] {
-    
-    padding: 12px 20px;
-    margin: 2px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
-.btn {
-    background-color: #4CAF50;
+.how h3{
+    margin: 5%;
     color: white;
-    padding: 14px 20px;
-    margin: 1px 0;
-    border: none;
-    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
 }
-
-/* Add a hover effect for buttons */
+.how img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
 .btn:hover {
     opacity: 0.8;
 }
-
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .king {background: red;}
+.jeka{
+    background-color:white;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pay card{
+    padding: 32px 16px 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: auto;
+}
+.both{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0%;
+}
+.let{
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    padding:0px;
+}
+.let h4{
+    padding: 0px;
+    margin: 25px;
+    font-size: 25px; 
+    font-family: 'Times New Roman', Times, serif;
+}
+.let h2{
+    padding-left: 20px;
+    margin: 2px;
+    font-size: 20px;
+    color: green;
+}
+.let p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #7d7b7a;
+    line-height: 20px;
+    padding-left: 25px;
+    padding-top: 10px; 
+}
+.let strong{
+    color: green;
+}
+.card img{
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+}
+.adap{
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    padding: 0%;
+}
+.adap h4{
+    padding: 0px;
+    margin: 25px;
+    font-size: 25px; 
+    font-family: 'Times New Roman', Times, serif;
+}
+.adap h2{
+    padding-left: 20px;
+    margin: 10px;
+    font-size: 20px;
+    color: green;
+}
+.adap p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #7d7b7a;
+    line-height: 20px;
+    padding-left: 25px;
+    padding-top: 5px; 
 }
 
+
+
+
+
+/* Here comes the media quaries */
+@media (max-width: 760px) {
+    .bg{
+        width: 100%;
+        height: 100%;
+    }
+   
+}
+@media (max-width:350px){
+     .logo img{
+        max-width: 250px;
+        min-width: 100px;
+        width: calc(100%/1.5);
+        height: auto;
+    }
+    .how img{
+        max-width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+    .how h3{
+        font-size: 16px;
+    }
+    .let  h4{
+        font-size: 20px;
+    }
+    .let h2{
+        font-size: 16px;
+        margin: 0%;
+    }
+    .let p{
+        font-size: 14px;
+        line-height: 20px;
+        color: #7d7b7a;
+    }
+    .adap h4{
+        font-size: 20px;
+    }
+    .adap h2{
+        font-size: 16px;
+        margin: 0%;
+    }
+    .adap p{
+        font-size: 14px;
+        line-height: 20px;
+        color: #7d7b7a;
+    }
+  
+}
+@media (max-width:480px) {
+     .motto div p{
+         font-size: 16px;
+         text-align: center;
+         display: flex;
+        justify-content: center;
+     }
+     .motto div h1{
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+     }
+}
+@media  (max-width: 570px) {
+    .find-ride .search{
+        display: inline-block;
+        padding-right: 35px;
+        padding-left: 35px; 
+        width: 300px;
+    }
+    .btn{
+        width: 100%;
+    }
+    b {
+        margin-left: 35px;
+    }
+    .motto h1{
+        font-size: 10px;
+    }
+}
+
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 608px) {
     .king {background: green;}
-    
+    .find-ride{
+        padding-left:0px; 
+    }
+}
+@media (max-width:798px){
+    .container{
+        padding: 32px 16px 32px 0px;
+        height: auto;
+    }
+    .find-ride .search{
+        display: inline-block;
+        padding-right: 35px;
+        padding-left: 35px; 
+        width: 300px;
+    }
+    .btn{
+        width: 100%;
+    }
+    b {
+        margin-left: 35px;
+    }
+    .motto h1{
+        font-size: 10px;
+    }
+    .how img{
+        max-width: 90%;
+        height: auto;
+        padding: 10px;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 802px) {
     .king {background: blue;}
     .mobile-icon{
         display: none;
+    }
+    .topnav .logo img{
+        max-width: 250;
+        min-width: 100px;
+        width: calc(100%/1.5);
+        height: auto;
     }
 } 
 @media only screen and (max-width: 801px) {
@@ -134,7 +378,15 @@ input[type=text], input[type=password] {
     .menu-list{
         display: none;
     }
-    
+   .both{
+       width: 100%; 
+   }
+   .adap{
+       width: 100%;
+   }
+   .let{
+       width: 100%;
+   }
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
