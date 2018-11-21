@@ -35,21 +35,25 @@ body, html {
     min-width: 100px;
     width: calc(100%/1.5);
     height: auto;
+    padding: 10px;
 }
-.menu{
+ .menu{
     display: flex;
     justify-content: flex-end;
-    align-items: center;
     width: 50%;
-    color: white;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-.menu img{
-    max-width: 200px;
+    max-width: 180px;
     min-width: 100px;
     width: calc(100%/1.5);
-    height: auto;
+    height: 50px;
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid green;
+}
+div .menu p{
+    padding: 10px;
+    color: black;
+    font-size: 30px;
+    font-family: 'Gloria Hallelujah', cursive;
 }
 .mobile{
     font-size: 35px;
@@ -67,19 +71,22 @@ body, html {
     color: white;
 }
 .motto div h1{
-    font-size: 80px;
+    font-size: 50px;
     padding: 0 0 10px 0;
+    font-family: 'Bitter', serif;
 }
 .motto div p{
+    padding: 20px;
     font-size: 35px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Bitter', serif;
+    color: white;
 }
 .dowm img{
-    padding-top: 30px;
     max-width: 300px;
     min-width: 300px;
     width: calc(100%/1.5);
     height: auto;
+    border-radius: 15px;
 }
 .photo{
     display: flex;
@@ -103,7 +110,7 @@ body, html {
         width: 50%;
     }
 } 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
     .both{
         display: flex;
         flex-wrap: wrap;
@@ -128,9 +135,7 @@ body, html {
         height: 300px;
     }
 }
-
-
-@media (max-width:360px) {
+@media (max-width:360px)and (max-width:480px) {
     .bg{
         width: 100%;
         height:100%;
@@ -143,22 +148,18 @@ body, html {
         padding: 10px;
     }
      .logo img{
+         padding-top: 10px;
         max-width: 250px;
         min-width: 100px;
         width: calc(100%/1.5);
         height: auto;
     }
-    .logo img{
-        max-width: 250px;
-        min-width: 100px;
+    div .menu p{
+        max-width: 500px;
+        min-width: 150px;
         width: calc(100%/1.5);
         height: auto;
-    }
-    .menu ing{
-        max-width: 250px;
-        min-width: 100px;
-        width: calc(100%/1.5);
-        height: auto; 
+        font-size: 26px;
     }
      .motto div p{
          font-size: 16px;
@@ -178,7 +179,6 @@ body, html {
         height: auto;
      }
      .photo img{
-         width: 250px;
          height: 250px;
          position: absolute;
          bottom: 5px;
