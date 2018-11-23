@@ -41,19 +41,16 @@ body, html {
     display: flex;
     justify-content: flex-end;
     width: 50%;
-    max-width: 180px;
-    min-width: 100px;
-    width: calc(100%/1.5);
-    height: 50px;
-    background-color: white;
-    border-radius: 20px;
-    border: 2px solid green;
 }
-div .menu p{
+.target span{
+    border: 1.5px solid green;
+    background-color: white;
+    border-radius: 5px;
+    color: green;
     padding: 10px;
-    color: black;
-    font-size: 30px;
-    font-family: 'Gloria Hallelujah', cursive;
+}
+.target{
+    padding-top: 20px;
 }
 .mobile{
     font-size: 35px;
@@ -154,13 +151,7 @@ div .menu p{
         width: calc(100%/1.5);
         height: auto;
     }
-    div .menu p{
-        max-width: 500px;
-        min-width: 150px;
-        width: calc(100%/1.5);
-        height: auto;
-        font-size: 26px;
-    }
+  
      .motto div p{
          font-size: 16px;
          text-align: center;
