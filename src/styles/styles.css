@@ -9,7 +9,7 @@ body, html {
 
 .bg {
     /* The image used */
-    background-image:  linear-gradient(to top right, rgb(7, 59, 7), rgb(79, 163, 79), rgb(176, 224, 184));
+    background-image:  linear-gradient(to top right, rgb(7, 59, 7), rgb(79, 163, 79), rgb(13, 87, 13));
     height: auto;
     width: 100%;
     background-position: center;
@@ -44,7 +44,7 @@ body, html {
 }
 .target span{
     border: 1px solid white;
-    background-color: rgb(176, 224, 184);
+    background-color: rgb(7, 59, 7);
     border-radius: 5px;
     color: white;
     padding: 10px;
