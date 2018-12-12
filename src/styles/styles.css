@@ -9,7 +9,6 @@ body, html {
 
 .bg {
     /* The image used */
-    background-image:  linear-gradient(to top right, rgb(7, 59, 7), rgb(79, 163, 79), rgb(13, 87, 13));
     height: auto;
     width: 100%;
     background-position: center;
@@ -17,12 +16,16 @@ body, html {
     background-size: auto;
 }
 .container{
+   
+}
+/** this is the top nav section **/
+.hero{
+    background-image:  linear-gradient(to top right, rgb(7, 59, 7), rgb(79, 163, 79), rgb(13, 87, 13));
     padding: 32px 16px 32px 0px;
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
     height: auto;
 }
-
 .topnav{
     display: flex;
 }
@@ -35,7 +38,7 @@ body, html {
     min-width: 100px;
     width: calc(100%/1.5);
     height: auto;
-    padding: 10px;
+    padding: 0 0 0 20px;
 }
  .menu{
     display: flex;
@@ -52,11 +55,11 @@ body, html {
 .target{
     padding-top: 20px;
 }
-.mobile{
-    font-size: 35px;
-}
+
+/** this is the first section **/
 .both{
     display: flex;
+    flex-wrap: wrap;
 }
 .motto{
     display: flex;
@@ -79,6 +82,7 @@ body, html {
     color: white;
 }
 .dowm img{
+    padding-top: 30px;
     max-width: 300px;
     min-width: 300px;
     width: calc(100%/1.5);
@@ -88,11 +92,36 @@ body, html {
 .photo{
     display: flex;
     justify-content: flex-start;
-    width: 50%;
 }
 .photo img{
-    width: 550px;
+    max-width: 200px;
+    min-width: 550px;
+    width: calc(100%/1.2);
     height: 500px;
+}
+/** this is another the section **/
+.second-nav{
+ display: flex;
+ flex-wrap: wrap;
+}
+.images{
+    display: flex;
+    justify-content: flex-start;
+}
+.use{
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+}
+.use div{
+    background-color:  rgb(13, 87, 13);
+    width: 500px;
+    height: auto;
+    padding: 50px;
+    border-radius: 10px;
+}
+.use p{
+    font-size: 20px;
 }
 @media (max-width: 1200px) {
     .both{
@@ -104,7 +133,6 @@ body, html {
     }
     .photo{
         display: flex;
-        width: 50%;
     }
 } 
 @media (max-width: 768px) {
@@ -145,9 +173,8 @@ body, html {
         padding: 10px;
     }
      .logo img{
-         padding-top: 10px;
-        max-width: 250px;
-        min-width: 100px;
+        max-width: 350px;
+        min-width: 120px;
         width: calc(100%/1.5);
         height: auto;
     }
@@ -165,15 +192,15 @@ body, html {
      }
      .dowm img{
         max-width: 200px;
-        min-width: 100px;
+        min-width: 120px;
         width: calc(100%/1.5);
         height: auto;
      }
      .photo img{
-         height: 250px;
-         position: absolute;
-         bottom: 5px;
-         left: 35px;
+        max-width: 200px;
+        min-width: 120px;
+        width: calc(100%/1.5);
+        height: 150px;
      }
      .motto{
          padding: 3px;
