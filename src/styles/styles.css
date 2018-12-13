@@ -1,230 +1,213 @@
-body, html {
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    font-family: "Gotham Rounded Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
-   
+body,
+html,
+.first-container {
+  padding: 0;
+  margin: 0;
+  font-family: 'Anton', sans-serif;
 }
 
-.bg {
-    /* The image used */
-    max-width: 1500px;
-    position: relative;
-    margin: auto;
-}
-.container{
-   
-}
 /** this is the top nav section **/
-.hero{
-    background-image:  linear-gradient(to top right, rgb(7, 59, 7), rgb(79, 163, 79), rgb(13, 87, 13));
-    padding: 32px 16px 32px 0px;
-    max-width: 1500px;
-    margin: 0 auto;
-    height: auto;
+.first-container {
+  background-image: linear-gradient(to bottom right, #02882f 35%, #02c702 79%);
+  height: 100vh;
 }
-.topnav{
-    display: flex;
+.topnav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: -20px -19px 13px 18px rgb(2, 73, 15, 1),  0 6px 20px 0 rgba(0, 128, 11, 0.19);
 }
-.logo{
-   width: 50%;
-    height: auto;
+.logo {
+  display: flex;
 }
-.logo img{
-    max-width: 200px;
-    min-width: 100px;
-    width: calc(100%/1.5);
-    height: auto;
-    padding: 0 0 0 20px;
+
+.top-download-button {
+  display: flex;
 }
- .menu{
-    display: flex;
-    justify-content: flex-end;
-    width: 50%;
+
+.top-download-button span {
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  padding: 8px;
+  font-weight: bold;
 }
-.target span{
-    border: 1px solid white;
-    background-color: rgb(7, 59, 7);
-    border-radius: 5px;
-    color: white;
-    padding: 10px;
-}
-.target{
-    padding: 10 20 0 0px;
+
+.top-download-button span:hover {
+  color: #009933;
+  background-color: white;
 }
 
 /** this is the first section **/
-.section-1{
-    display: flex;
-    flex-wrap: wrap;
+.section-1 {
+  display: flex;
+  justify-content: center;
 }
-.motto{
-    display: flex;
-    justify-content: flex-end;
-    width: 50%;
-    text-align: center;
-    margin: 50px 0;
-    font-size: large;
-    color: white;
+.motto {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
 }
-.motto div h1{
-    font-size: 50px;
-    padding: 0 0 10px 0;
-    font-family: 'Bitter', serif;
+.motto h1 {
+  font-size: 60px;
+  margin: 20px 0;
 }
-.motto div p{
-    padding: 20px;
-    font-size: 35px;
-    font-family: 'Bitter', serif;
-    color: white;
+.motto p {
+  padding: 10px;
+  font-size: 20px;
+  color: white;
 }
-.dowm img{
-    padding-top: 30px;
-    max-width: 300px;
-    min-width: 300px;
-    width: calc(100%/1.5);
-    height: auto;
-    border-radius: 15px;
+
+.photo {
+  display: flex;
+  justify-content: center;
 }
-.photo{
-    display: flex;
-    justify-content: flex-start;
-}
-.photo img{
-    max-width: 200px;
-    min-width: 550px;
-    width: calc(100%/1.2);
-    height: 500px;
+
+.app-dowmload-button {
+  margin: 20px 0 0 0;
 }
 
 /** this is another the section **/
-.section-2{
- display: flex;
- justify-content: space-around;
+.section-2 {
+  display: flex;
+  justify-content: space-around;
 }
-.images{
-    display: flex;
+.images {
+  display: flex;
 }
-.jekalo-two{
-   width: 400px;
-   height: 350px;
-   padding: 20 10 30 50px;
+.jekalo-two {
+  width: 400px;
+  height: 350px;
+  padding: 20 10 30 50px;
 }
-.use{
-    display: flex;
+.use {
+  display: flex;
 }
-.cover{
-    padding: 80 50 0 4px;
+.cover {
+  padding: 80 50 0 4px;
 }
-.cover h2{
-    color: #054752;
-    font-size: 30px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    line-height: 1.06;
-    font-weight: 500;
-    padding: 5px;
+.cover h2 {
+  color: #054752;
+  font-size: 30px;
+  line-height: 1.06;
+  font-weight: 500;
+  padding: 5px;
 }
-.cover p{
-    color: #061f24;
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    line-height: 1.06;
-    font-weight: 500; 
-    padding: 5px;
+.cover p {
+  color: #061f24;
+  font-size: 20px;
+  line-height: 1.06;
+  font-weight: 500;
+  padding: 5px;
 }
-.offer span{
-    border: 1px solid white;
-    background-color: rgb(7, 59, 7);
-    border-radius: 5px;
-    color: white;
-    padding: 10px;
+.offer span {
+  border: 1px solid white;
+  background-color: rgb(7, 59, 7);
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
 }
-.offer{
-    padding: 30 0 0 0px;
-    text-align: center;
-}
-@media (max-width: 1200px) {
-    .both{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .motto{
-        width: 50%
-    }
-    .photo{
-        display: flex;
-    }
-} 
-@media (max-width: 768px) {
-    .both{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .motto{
-        width: 100%
-    }
-    .photo{
-        display: flex;
-        width: 100%;
-    }
-}
-@media (max-width: 600px) and (max-width:500px){
-    .photo img{
-        width: calc(200%/1.5);
-    }
-}
-@media (max-width:360px)and (max-width:499px) {
-    .bg{
-        width: 100%;
-        height:100%;
-    }
-    .container{
-        margin: 5px;
-        padding: 5px;
-    }
-    .topnav{
-        padding: 10px;
-    }
-     .logo img{
-        max-width: 200px;
-        min-width: 100px;
-        width: calc(100%/1.5);
-        height: auto;
-    }
-  
-     .motto div p{
-         font-size: 16px;
-         text-align: center;
-         display: flex;
-        justify-content: center;
-     }
-     .motto div h1{
-        font-size: 25px;
-        display: flex;
-        justify-content: center;
-     }
-     .dowm img{
-        max-width: 200px;
-        min-width: 120px;
-        width: calc(100%/1.5);
-        height: auto;
-     }
-     .photo img{
-        max-width: 200px;
-        min-width: 120px;
-        width: calc(100%/1.5);
-        height: 150px;
-     }
-     .motto{
-         padding: 3px;
-     }
-     .motto div h1{
-         font-size: 30px;
-     }
-     .motto div p{
-         font-size: 25px;
-     }
+.offer {
+  padding: 30 0 0 0px;
+  text-align: center;
 }
 
- 
+@media only screen and (min-width: 700px) {
+    .topnav{
+        padding: 10px 16%;
+    }
+    .motto h1 {
+        margin: 20px 0 0 0;
+    }
+.photo img{
+    width: 500px;
+    height: 400px;
+}
+}
+
+/* 
+@media (max-width: 1200px) {
+  .both {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .motto {
+    width: 50%;
+  }
+  .photo {
+    display: flex;
+  }
+}
+@media (max-width: 768px) {
+  .both {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .motto {
+    width: 100%;
+  }
+  .photo {
+    display: flex;
+    width: 100%;
+  }
+}
+@media (max-width: 600px) and (max-width: 500px) {
+  .photo img {
+    width: calc(200% / 1.5);
+  }
+}
+@media (max-width: 360px) and (max-width: 499px) {
+  .bg {
+    width: 100%;
+    height: 100%;
+  }
+  .container {
+    margin: 5px;
+    padding: 5px;
+  }
+  .topnav {
+    padding: 10px;
+  }
+  .logo img {
+    max-width: 200px;
+    min-width: 100px;
+    width: calc(100% / 1.5);
+    height: auto;
+  }
+
+  .motto div p {
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .motto div h1 {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+  }
+  .dowm img {
+    max-width: 200px;
+    min-width: 120px;
+    width: calc(100% / 1.5);
+    height: auto;
+  }
+  .photo img {
+    max-width: 200px;
+    min-width: 120px;
+    width: calc(100% / 1.5);
+    height: 150px;
+  }
+  .motto {
+    padding: 3px;
+  }
+  .motto div h1 {
+    font-size: 30px;
+  }
+  .motto div p {
+    font-size: 25px;
+  }
+} */
