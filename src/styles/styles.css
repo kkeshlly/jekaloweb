@@ -4,20 +4,10 @@ body, html {
     padding: 0;
     margin: 0;
     font-family: "Gotham Rounded Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
-   
 }
 
-.bg {
-    /* The image used */
-    max-width: 1500px;
-    position: relative;
-    margin: auto;
-}
-.container{
-   
-}
 /** this is the top nav section **/
-.hero{
+.container{
     background-image:  linear-gradient(to top right, rgb(7, 59, 7), rgb(79, 163, 79), rgb(13, 87, 13));
     padding: 32px 16px 32px 0px;
     max-width: 1500px;
