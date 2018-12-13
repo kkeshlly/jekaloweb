@@ -9,11 +9,9 @@ body, html {
 
 .bg {
     /* The image used */
-    height: auto;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto;
+    max-width: 1500px;
+    position: relative;
+    margin: auto;
 }
 .container{
    
@@ -57,7 +55,7 @@ body, html {
 }
 
 /** this is the first section **/
-.both{
+.section-1{
     display: flex;
     flex-wrap: wrap;
 }
@@ -99,29 +97,52 @@ body, html {
     width: calc(100%/1.2);
     height: 500px;
 }
+
 /** this is another the section **/
-.second-nav{
+.section-2{
  display: flex;
- flex-wrap: wrap;
+ justify-content: space-around;
 }
 .images{
     display: flex;
-    justify-content: flex-start;
+}
+.jekalo-two{
+   width: 400px;
+   height: 350px;
+   padding: 20 10 30 50px;
 }
 .use{
     display: flex;
-    justify-content: flex-end;
-    padding: 30px;
 }
-.use div{
-    background-color:  rgb(13, 87, 13);
-    width: 500px;
-    height: auto;
-    padding: 50px;
-    border-radius: 10px;
+.cover{
+    padding: 80 50 0 4px;
 }
-.use p{
+.cover h2{
+    color: #054752;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.06;
+    font-weight: 500;
+    padding: 5px;
+}
+.cover p{
+    color: #061f24;
     font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.06;
+    font-weight: 500; 
+    padding: 5px;
+}
+.offer span{
+    border: 1px solid white;
+    background-color: rgb(7, 59, 7);
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+}
+.offer{
+    padding: 30 0 0 0px;
+    text-align: center;
 }
 @media (max-width: 1200px) {
     .both{
