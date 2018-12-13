@@ -9,7 +9,8 @@ html,
 /** this is the top nav section **/
 .first-container {
   background-image: linear-gradient(to bottom right, #02882f 35%, #02c702 79%);
-  height: 100vh;
+  min-height: 100vh;
+  max-height: 200%;
 }
 .topnav {
   display: flex;
