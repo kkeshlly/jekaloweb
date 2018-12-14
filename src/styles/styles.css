@@ -8,8 +8,9 @@ html,
 
 /** this is the top nav section **/
 .first-container {
-  background-image: linear-gradient(to bottom right, #02882f 35%, #02c702 79%);
-  height: 100vh;
+  background-image: linear-gradient(to bottom right, #02882f 35%, #0b5a0b 79%);
+  min-height: 100vh;
+  max-height: 200vh;
 }
 .topnav {
   display: flex;
@@ -17,7 +18,7 @@ html,
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  box-shadow: -20px -19px 13px 18px rgb(2, 73, 15, 1),  0 6px 20px 0 rgba(0, 128, 11, 0.19);
+  box-shadow: -20px -19px 13px 18px rgb(63, 153, 81),  0 6px 20px 0 rgba(25, 49, 27, 0.19);
 }
 .logo {
   display: flex;
@@ -43,7 +44,7 @@ html,
 /** this is the first section **/
 .section-1 {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 .motto {
   display: flex;
@@ -52,8 +53,8 @@ html,
   color: white;
 }
 .motto h1 {
-  font-size: 60px;
-  margin: 20px 0;
+  font-size: 50px;
+  padding: 5px 0;
 }
 .motto p {
   padding: 10px;
@@ -73,22 +74,23 @@ html,
 /** this is another the section **/
 .section-2 {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 20px;
 }
 .images {
   display: flex;
 }
 .jekalo-two {
-  width: 400px;
-  height: 350px;
-  padding: 20 10 30 50px;
+  padding: 10px 0 10 0px;
 }
 .use {
   display: flex;
 }
 .cover {
-  padding: 80 50 0 4px;
-}
+  text-align: center;
+  padding: 50 0 30 10px;
+ }
 .cover h2 {
   color: #054752;
   font-size: 30px;
@@ -112,12 +114,42 @@ html,
 }
 .offer {
   padding: 30 0 0 0px;
-  text-align: center;
 }
-
+/** Here is the footer section **/
+.footer-body{
+  background-color: #165016;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.list{
+  text-align: center;
+  padding: 20px;
+}
+ul {
+  list-style-type: none;
+  display: inline-block;
+}
+li a{
+  margin-bottom: 8px;
+  line-height: 1.06;
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+.social-icon{
+  display: flex;
+  justify-content: center;
+  padding: 50 0 10 10px;
+}
+.social-icon ul li{
+  color: white;
+  font-size: 30px;
+  padding: 0px 15px; 
+}
 @media only screen and (min-width: 700px) {
     .topnav{
-        padding: 10px 16%;
+      padding: 10px 16%;
     }
     .motto h1 {
         margin: 20px 0 0 0;
@@ -126,6 +158,13 @@ html,
     width: 500px;
     height: 400px;
 }
+.section-2{
+  flex-direction: row;
+}
+.footer-body{
+  flex-direction: row;
+}
+
 }
 
 /* 
