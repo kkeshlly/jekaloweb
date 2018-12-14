@@ -8,9 +8,15 @@ html,
 
 /** this is the top nav section **/
 .first-container {
+<<<<<<< HEAD
   background-image: linear-gradient(to bottom right, #02882f 35%, #0b5a0b 79%);
   min-height: 100vh;
   max-height: 200vh;
+=======
+  background-image: linear-gradient(to bottom right, #02882f 35%, #02c702 79%);
+  min-height: 100vh;
+  max-height: 200%;
+>>>>>>> 767389c322ea4253a2626901b117db1d8343d21a
 }
 .topnav {
   display: flex;
