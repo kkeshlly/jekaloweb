@@ -8,15 +8,9 @@ html,
 
 /** this is the top nav section **/
 .first-container {
-<<<<<<< HEAD
   background-image: linear-gradient(to bottom right, #02882f 35%, #0b5a0b 79%);
   min-height: 100vh;
   max-height: 200vh;
-=======
-  background-image: linear-gradient(to bottom right, #02882f 35%, #02c702 79%);
-  min-height: 100vh;
-  max-height: 200%;
->>>>>>> 767389c322ea4253a2626901b117db1d8343d21a
 }
 .topnav {
   display: flex;
@@ -88,14 +82,14 @@ html,
   display: flex;
 }
 .jekalo-two {
-  padding: 10px 0 10 0px;
+  padding: 0px;
 }
 .use {
   display: flex;
 }
 .cover {
   text-align: center;
-  padding: 50 0 30 10px;
+  padding: 100 0 30 50px;
  }
 .cover h2 {
   color: #054752;
@@ -134,21 +128,20 @@ html,
 }
 ul {
   list-style-type: none;
-  display: inline-block;
+  display: inline;
 }
 li a{
   margin-bottom: 8px;
   line-height: 1.06;
   color: white;
-  display: block;
+  display: inline-block;
   text-decoration: none;
 }
 .social-icon{
   display: flex;
   justify-content: center;
-  padding: 50 0 10 10px;
 }
-.social-icon ul li{
+.social-icon li{
   color: white;
   font-size: 30px;
   padding: 0px 15px; 
@@ -170,7 +163,15 @@ li a{
 .footer-body{
   flex-direction: row;
 }
-
+}
+@media (max-width: 375px){
+  .jekalo-two{
+    width: 55vh;
+    height: 55vh
+  }
+  .cover{
+    padding: 20 0px;
+  }
 }
 
 /* 
