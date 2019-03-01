@@ -1,259 +1,52 @@
-body,
-html,
-.first-container {
-  padding: 0;
-  margin: 0;
-  font-family: 'Anton', sans-serif;
-}
 
-/** this is the top nav section **/
-.first-container {
-  background-image: linear-gradient(to bottom right, #02882f 35%, #0b5a0b 79%);
-  min-height: 100vh;
-  max-height: 200vh;
+.look{
+  background-color: rgb(62, 131, 62);
 }
-.topnav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  box-shadow: -20px -19px 13px 18px rgb(63, 153, 81),  0 6px 20px 0 rgba(25, 49, 27, 0.19);
+.scroll{
+  margin-top: 50px;
 }
-.logo {
-  display: flex;
+#mycarousel{
+ position: relative;
+ width: 100%;
+ overflow: hidden;
 }
-
-.top-download-button {
-  display: flex;
+.carousel-caption p{
+  float: right;
+  text-align: left;
+  font-weight: 300;
+  width: 50%;
+  text-shadow: none;
 }
-
-.top-download-button span {
-  border: 2px solid white;
-  border-radius: 5px;
-  color: white;
-  padding: 8px;
+.feature-head{
+  text-align: center;
+  color: rgb(38, 126, 38);
+  font-size: 35px;
+  font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
 }
-
-.top-download-button span:hover {
-  color: #009933;
-  background-color: white;
+.features{
+  padding: 30px 0 50px;
 }
-
-/** this is the first section **/
-.section-1 {
-  display: flex;
-  justify-content: space-around;
+.features img{
+  max-width: 70px;
+  float: left;
 }
-.motto {
-  display: flex;
-  flex-direction: column;
+.features h4{
   text-align: center;
-  color: white;
 }
-.motto h1 {
-  font-size: 50px;
-  padding: 5px 0;
+.footer{
+  background-color: rgb(62, 131, 62);
 }
-.motto p {
-  padding: 10px;
-  font-size: 20px;
-  color: white;
+.icon{
+  padding: 0 10px;
 }
-
-.photo {
-  display: flex;
-  justify-content: center;
-}
-
-.app-dowmload-button {
-  margin: 20px 0 0 0;
-}
-
-/** this is another the section **/
-.section-2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 10px 20px;
-}
-.images {
-  display: flex;
-}
-.jekalo-two {
-  padding: 0px;
-}
-.use {
-  display: flex;
-}
-.cover {
-  text-align: center;
-  padding: 100 0 30 50px;
- }
-.cover h2 {
-  color: #054752;
-  font-size: 30px;
-  line-height: 1.06;
-  font-weight: 500;
-  padding: 5px;
-}
-.cover p {
-  color: #061f24;
-  font-size: 20px;
-  line-height: 1.06;
-  font-weight: 500;
-  padding: 5px;
-}
-.offer span {
-  border: 1px solid white;
-  background-color: rgb(7, 59, 7);
-  border-radius: 5px;
-  color: white;
-  padding: 10px;
-}
-.offer {
-  padding: 30 0 0 0px;
-}
-/** Here is the footer section **/
-.footer-body{
-  background-color: #165016;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.list{
-  text-align: center;
-  padding: 20px;
-}
-ul {
-  list-style-type: none;
-  display: inline;
-}
-li a{
-  margin-bottom: 8px;
-  line-height: 1.06;
-  color: white;
-  display: inline-block;
+.icon a{
   text-decoration: none;
-}
-.social-icon{
-  display: flex;
-  justify-content: center;
-}
-.social-icon li{
   color: white;
-  font-size: 30px;
-  padding: 0px 15px; 
 }
-@media only screen and (min-width: 700px) {
-    .topnav{
-      padding: 10px 16%;
-    }
-    .motto h1 {
-        margin: 20px 0 0 0;
-    }
-.photo img{
-    width: 500px;
-    height: 400px;
+.icon i{
+  padding: 5px;
 }
-.section-2{
-  flex-direction: row;
+.icon :hover{
+  color: rgb(83, 116, 207);
 }
-.footer-body{
-  flex-direction: row;
-}
-}
-@media (max-width: 375px){
-  .jekalo-two{
-    width: 55vh;
-    height: 55vh
-  }
-  .cover{
-    padding: 20 0px;
-  }
-}
-
-/* 
-@media (max-width: 1200px) {
-  .both {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .motto {
-    width: 50%;
-  }
-  .photo {
-    display: flex;
-  }
-}
-@media (max-width: 768px) {
-  .both {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .motto {
-    width: 100%;
-  }
-  .photo {
-    display: flex;
-    width: 100%;
-  }
-}
-@media (max-width: 600px) and (max-width: 500px) {
-  .photo img {
-    width: calc(200% / 1.5);
-  }
-}
-@media (max-width: 360px) and (max-width: 499px) {
-  .bg {
-    width: 100%;
-    height: 100%;
-  }
-  .container {
-    margin: 5px;
-    padding: 5px;
-  }
-  .topnav {
-    padding: 10px;
-  }
-  .logo img {
-    max-width: 200px;
-    min-width: 100px;
-    width: calc(100% / 1.5);
-    height: auto;
-  }
-
-  .motto div p {
-    font-size: 16px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-  }
-  .motto div h1 {
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-  }
-  .dowm img {
-    max-width: 200px;
-    min-width: 120px;
-    width: calc(100% / 1.5);
-    height: auto;
-  }
-  .photo img {
-    max-width: 200px;
-    min-width: 120px;
-    width: calc(100% / 1.5);
-    height: 150px;
-  }
-  .motto {
-    padding: 3px;
-  }
-  .motto div h1 {
-    font-size: 30px;
-  }
-  .motto div p {
-    font-size: 25px;
-  }
-} */
