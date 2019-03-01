@@ -3,7 +3,7 @@
   background-color: rgb(62, 131, 62);
 }
 .scroll{
-  margin-top: 50px;
+  margin-top: 70px;
 }
 #mycarousel{
  position: relative;
@@ -50,3 +50,4 @@
 .icon :hover{
   color: rgb(83, 116, 207);
 }
+
